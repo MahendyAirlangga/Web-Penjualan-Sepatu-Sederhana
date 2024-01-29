@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 230, 230);
+}
+
+/* navbar */
+
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Adjust the transparency as needed */
+}
+
+/* banner */
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.banner .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    opacity: 0.7;
+}
+
+.banner-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* status */
+.status {
+    display: flex;
+    background-color: rgb(255, 230, 230);
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width:90%;
+    border-radius: 10px;
+    margin: -40px auto 50px; /* Mengatur margin atas dan bawah, nilai negatif untuk menonjol ke atas */
+    position: relative;
+    z-index: 1; /* Memberikan z-index yang lebih tinggi daripada banner */
+    padding-bottom: 50px;
+}
+
+.status h1, .status p {
+    text-align: center;
+    margin: 10px 0;
+    
+}
+
+.status h1 {
+    padding-top: 30px;
+}
+
+
+/* desc singkat produc */
+.produk {
+    width: 100%;
+    display: flex;
+}
+
+.produk .fotoproduk {
+    max-width: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.produk .fotoproduk img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.produk .fotoproduk img:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+}
+
+.produk .descproduk {
+    max-width: 50%;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.produk .descproduk h2{
+    text-align: justify;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.produk .descproduk p{
+    text-align: justify;
+    width: 75%;
+    height: fit-content;
+}
+
+.carousel{
+    width: 100%;
+}
+
+.carousel h1{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* katalog */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .product-card {
+    width: 300px;
+    border-radius: 10px;
+    -webkit-box-shadow:  0px 0px 47px -20px rgba(0,0,0,1);
+    -moz-box-shadow:  0px 0px 47px -20px rgba(0,0,0,1);
+    box-shadow:  0px 0px 47px -20px rgba(0,0,0,1);
+    margin: 60px 0px 60px 0px;
+    background-color: #fff;
+  }
+  
+  .product-image {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    top:-90px;
+    padding: 10px;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+    border-radius: 10px;
+  }
+  
+  .product-image:hover img {
+    transform: scale(1.1);
+  }
+  
+  .product-details {
+    padding: 20px;
+    margin-top:-90px;
+  }
+  
+  .product-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .product-details.expand {
+    height: auto;
+  }
+  
+  .product-details .expand-button {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .product-details .expand-button:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-to-cart,
+  .compare {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .add-to-cart {
+    background-color: #333;
+  }
+  
+  .compare {
+    background-color: #85811b;
+    color:#fff;
+  }
+  
+  .add-to-cart:hover,
+  .compare:hover {
+    opacity: 0.8;
+  }
+  
+  .credit a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+  }
+  
+  .credit {
+      color: #000;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+  }
+
+
+/* rating */
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+
+}
+
+
+.slide-content{
+    margin:0 40px;
+    overflow: hidden;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #333;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.Rating{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: #333;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background-color: #111111;
+}
+
+.swiper-navBtn{
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+    color: #141414;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+
+.swiper-button-next{
+    color: #333;
+    right: 0;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+
+/* footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    color: rgb(250, 247, 247);
+    margin: 0 auto;
+    position: relative;
+    height: 100px;
+}
+
+@media only screen and (max-width: 900px) {
+    .produk {
+        display: grid;
+        justify-items: center;
+    }
+  }

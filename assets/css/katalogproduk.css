@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 230, 230);
+}
+
+/* navbar */
+
+/* banner */
+.banner {
+  width: 100%;
+  max-width: 100%;
+  background-color: rgb(255, 230, 230);
+}
+
+.banner img {
+  width: 100%;
+  height: 600px;
+}
+
+.banner .bg{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  opacity: 0.7;
+}
+
+.banner-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.status {
+  display: flex;
+  background-color: rgb(255, 230, 230);
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width:90%;
+  border-radius: 10px;
+  margin: -40px auto 50px; /* Mengatur margin atas dan bawah, nilai negatif untuk menonjol ke atas */
+  position: relative;
+  z-index: 1; /* Memberikan z-index yang lebih tinggi daripada banner */
+  padding-bottom: 50px;
+}
+
+.status h1, .status p {
+  text-align: center;
+  margin: 10px 0;
+  
+}
+
+.status h1 {
+  padding-top: 30px;
+}
+
+/* katalog */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .product-card {
+    width: 300px;
+    border-radius: 10px;
+    -webkit-box-shadow:  0px 0px 47px -20px rgba(0,0,0,1);
+    -moz-box-shadow:  0px 0px 47px -20px rgba(0,0,0,1);
+    box-shadow:  0px 0px 47px -20px rgba(0,0,0,1);
+    margin: 60px 0px 60px 0px;
+    background-color: #fff;
+  }
+  
+  .product-image {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    top:-90px;
+    padding: 10px;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+    border-radius: 10px;
+  }
+  
+  .product-image:hover img {
+    transform: scale(1.1);
+  }
+  
+  .product-details {
+    padding: 20px;
+    margin-top:-90px;
+  }
+  
+  .product-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .product-details.expand {
+    height: auto;
+  }
+  
+  .product-details .expand-button {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .product-details .expand-button:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-to-cart,
+  .compare {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .add-to-cart {
+    background-color: #333;
+  }
+  
+  .compare {
+    background-color: #85811b;
+    color:#fff;
+  }
+  
+  .add-to-cart:hover,
+  .compare:hover {
+    opacity: 0.8;
+  }
+  
+  .credit a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+  }
+  
+  .credit {
+      color: #000;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+  }
+
+
+.lebihbanyak{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout {
+    font-size: 20px;
+    background-color: #333;
+    width: 260px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration:0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.checkout:hover, .checkout:focus, .checkout:active{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* footer */
+footer {
+    margin-top: 50px;
+    background-color: #333;
+    text-align: center;
+    color: rgb(250, 247, 247);
+    position: relative;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 25px;
+}

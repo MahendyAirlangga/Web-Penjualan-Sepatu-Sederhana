@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gate away</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"">
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd0208f57a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body style="background-color: rgb(255, 230, 230);">
+    <nav style="background:#333;" class="navbar navbar-expand-lg navbar-dark p-3 ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="dashboard.html"><img src="assets/image/Logo.png" alt="gambar logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 " aria-current="page" href="dashboard.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active" href="katalogproduk.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="keranjang.html">Keranjang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="banner">
+        <img src="../dashboard/image/sepatubanner.jpg" alt="banner">
+        <img class="bg" src="../dashboard/image/hitam.png" alt="">
+        <div class="banner-text">
+          <h1 style="font-weight:700; font-size:80px;" >RUMAH SEPATU</h1>
+          <p style="font-size:25px;" >Langkah dengan Kepercayaan, Berjalan dengan Gaya: Pilih Sepatumu, <br>Dapatkan Cerita yang Tak Terlupakan Dari Perjalanan Menggunakan Sepatu Kami.</p>
+        </div>
+      </div> -->
+    <div style="width: fit-content; max-width:max-content; background:white; border-radius:10px; margin-top:100px;"
+        class="container d-lg-flex">
+        <div class="box-1 bg-white user">
+            <div class="box-inner-1 pb-3 mb-3 ">
+                <div style="margin-top: 30px;" class="d-flex justify-content-between mb-3 userdetails">
+                    <p style="font-size: 25px;" class="fw-bold">Sepatu Mahal Fiki</p>
+                    <p style="font-size: 25px; font-weight:900;" class="fw-lighter"></span>Rp 3.000.000.00,-</p>
+                </div>
+                <div id="my" class="carousel slide carousel-fade img-details" data-bs-ride="carousel"
+                    data-bs-interval="2000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#my" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#my" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#my" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/image/sepatu5.jpg" class="d-block w-100">
+                        </div>
+                    </div>
+
+                </div>
+                <p class="dis info my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos ipsa
+                    sed officiis odio
+                </p>
+                <div class="radiobtn">
+                    <input type="radio" name="box" id="one">
+                    <input type="radio" name="box" id="two">
+                    <input type="radio" name="box" id="three">
+                    <label style="border-color:white;  background: #333;" for="one" class="box py-2 first">
+                        <div class="d-flex align-items-start">
+                            <span class="circle"></span>
+                            <div class="course">
+                                <div style="color: white;"
+                                    class="d-flex align-items-center justify-content-between mb-2">
+                                    <span>
+                                        Kupon 01
+                                    </span>
+                                    <span>RP 100.000.00,-</span>
+                                </div>
+                                <span style="color: white;">s/d July 2024</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label style="background: #333;" for="two" class="box py-2 second">
+                        <div class="d-flex">
+                            <span class="circle"></span>
+                            <div class="course">
+                                <div style="color: white;"
+                                    class="d-flex align-items-center justify-content-between mb-2">
+                                    <span>
+                                        Kupon 02
+                                    </span>
+                                    <span>RP 100.000.00,-</span>
+                                </div>
+                                <span style="color: white;">s/d July 2024</span>
+                            </div>
+                        </div>
+                    </label>
+                    <label style="background: #333;" for="three" class="box py-2 third">
+                        <div class="d-flex">
+                            <span class="circle"></span>
+                            <div class="course">
+                                <div style="color: white;"
+                                    class="d-flex align-items-center justify-content-between mb-2">
+                                    <span>
+                                        Kupon 03
+                                    </span>
+                                    <span>RP 100.000.00,-</span>
+                                </div>
+                                <span style="color: white;">s/d July 2024</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="width: 700px;" class="box-2">
+            <div class="box-inner-2">
+                <div style="font-size: 20px;">
+                    <p style="margin-top: 35px;" class="fw-bold">Payment Details</p>
+                    <p style="font-size: 20px;" class="dis mb-3">Complete your purchase by providing your payment
+                        details</p>
+                </div>
+                <form action="">
+                    <div class="mb-3">
+                        <p style="font-size: 20px;" class="dis fw-bold mb-2">Email address</p>
+                        <input class="form-control" type="email" value="luke@skywalker.com">
+                    </div>
+                    <div>
+                        <p style="font-size: 20px;" class="dis fw-bold mb-2">Card details</p>
+                        <div class="d-flex align-items-center justify-content-between card-atm border rounded">
+                            <div class="fab fa-cc-visa ps-3"></div>
+                            <input type="text" class="form-control" placeholder="Card Details">
+                            <div class="d-flex w-50">
+                                <input type="text" class="form-control px-0" placeholder="MM/YY">
+                                <input type="password" maxlength=3 class="form-control px-0" placeholder="CVV">
+                            </div>
+                        </div>
+                        <div class="my-3 cardname">
+                            <p style="font-size: 20px;" class="dis fw-bold mb-2">Cardholder name</p>
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="address">
+                            <p style="font-size: 20px;" class="dis fw-bold mb-3">Billing address</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected hidden>United States</option>
+                                <option value="1">India</option>
+                                <option value="2">Australia</option>
+                                <option value="3">Canada</option>
+                            </select>
+                            <div class="d-flex">
+                                <input class="form-control zip" type="text" placeholder="ZIP">
+                                <input class="form-control state" type="text" placeholder="State">
+                            </div>
+                            <div class=" my-3">
+                                <p style="font-size: 20px;" class="dis fw-bold mb-2">VAT Number</p>
+                                <div class="inputWithcheck">
+                                    <input class="form-control" type="text" value="GB012345B9">
+                                    <span class="fas fa-check"></span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column dis">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p style="font-size: 20px;">Subtotal</p>
+                                    <p style="font-size: 20px;">Rp 3.000.000.00,-</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p style="font-size: 20px;">VAT<span>(0%)</span></p>
+                                    <p style="font-size: 20px;">Rp 0</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <p style="font-size: 20px;" class="fw-bold">Total</p>
+                                    <p style="font-size: 20px;" class="fw-bold"></span>Rp 3.000.000.00,-</p>
+                                </div>
+                                <div class="btn btn-primary mt-2" onclick="contoh()">Beli
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer style="margin-top:50px; height: 100px; display:flex; align-items:center; justify-content:center;"
+        class="futer">
+        <p>&copy; 2024 Shoe Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/paymentgateaway.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
